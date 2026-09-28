@@ -37,7 +37,7 @@
   if (window.L) {
     const LAT = -50.84787, LNG = -72.23116;
     const map = L.map('map', {center:[-50.7,-72.55], zoom:8, scrollWheelZoom:false, zoomControl:true});
-    L.tileLayer('https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=cb1_40cv_1_ad8213938391da08d104d15e, {maxZoom:19, attribution:'&copy; OpenStreetMap · &copy; CARTO'}).addTo(map);
+    L.tileLayer('https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=cb1_40cv_1_ad8213938391da08d104d15e', {maxZoom:19, attribution:'&copy; OpenStreetMap · &copy; CARTO'}).addTo(map);
     const mainIcon = L.divIcon({className:'', html:'<div class="map-pulse"><i></i><b></b></div>', iconSize:[22,22], iconAnchor:[11,11]});
     L.marker([LAT,LNG],{icon:mainIcon,zIndexOffset:1000}).addTo(map).bindTooltip('Estancia La Verdadera Argentina',{permanent:true,direction:'right',offset:[8,0],className:'map-label primary'});
     const refs=[[-50.3379,-72.2648,'El Calafate'],[-50.4761,-73.0392,'Glaciar Perito Moreno'],[-49.3315,-72.8859,'El Chaltén'],[-51.7236,-72.5069,'Puerto Natales'],[-51.0,-73.05,'P.N. Torres del Paine']];
