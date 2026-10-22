@@ -17,3 +17,11 @@
 @media(max-width:520px){.brand-copy{display:none}.hero{min-height:640px}.hero h1{font-size:43px}.location-line{font-size:8px}.stats{grid-template-columns:1fr}.experience-image{aspect-ratio:4/3}.product-small-grid{gap:10px}.included-grid{grid-template-columns:1fr}.gallery-slide{height:54vh;min-height:360px}.card-footer{flex-direction:column}.signature-meta{grid-template-columns:1fr}.header-actions{gap:8px}}
 
 .map-pulse{position:relative;width:22px;height:22px}.map-pulse i{position:absolute;inset:0;border:1px solid rgba(30,25,20,.55);border-radius:50%;animation:mapPulse 2.6s ease-out infinite}.map-pulse b{position:absolute;inset:6px;background:#1e1915;border-radius:50%;box-shadow:0 0 0 3px rgba(255,255,255,.86)}.map-dot{width:8px;height:8px;background:#1e1915;border-radius:50%;box-shadow:0 0 0 2px rgba(255,255,255,.9)}@keyframes mapPulse{0%{transform:scale(1);opacity:.8}80%,100%{transform:scale(2.6);opacity:0}}
+
+/* Fotografías secundarias del alojamiento */
+.stay-section .product-small-grid img {
+  object-fit: contain;
+  object-position: center;
+  background-color: #eae8e2;
+}
+
